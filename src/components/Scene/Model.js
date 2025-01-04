@@ -9,7 +9,7 @@ export default function Model() {
   const torus = useRef(null);
 
   useFrame(() => {
-    torus.current.rotation.x += 0.02;  // To control the rotation of the torus
+    torus.current.rotation.x += 0.05; // To control the rotation of the torus
   });
 
   const materialProps = useControls({
@@ -26,7 +26,7 @@ export default function Model() {
       <Text
         font={"/fonts/PPNeueMontreal-Bold.otf"}
         position={[0, 0, -1]}
-        fontSize={0.8}
+        fontSize={0.6}
         color="white"
         anchorX="center"
         anchorY="middle"
